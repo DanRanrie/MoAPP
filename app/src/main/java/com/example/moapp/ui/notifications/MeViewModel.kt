@@ -1,13 +1,13 @@
-package com.example.moapp.ui.dashboard
+package com.example.moapp.ui.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class MeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+        value = "这是余书"
     }
     val text: LiveData<String> = _text
 }

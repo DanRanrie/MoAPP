@@ -19,7 +19,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // 隐藏 ActionBar  同时也保留底部导航栏
+        supportActionBar!!.hide()
+
         val navView: BottomNavigationView = binding.navView
+        navView.setItemIconTintList(null)  // 这个是干什么的？// 取消图标变颜色的功能
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         // Passing each menu ID as a set of Ids because each

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    kotlin("kapt") version "1.9.0"
 }
 
 android {
@@ -48,6 +49,11 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation("com.google.android.material:material:1.5.0")
+    implementation("androidx.room:room-runtime:2.1.0")// 添加Room依赖
+    implementation(libs.androidx.recyclerview)
+    kapt("androidx.room:room-compiler:2.6.1") // 添加Room注解依赖
+    implementation("com.github.bumptech.glide:glide:4.9.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
