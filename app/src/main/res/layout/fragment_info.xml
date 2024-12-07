@@ -5,25 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.InfoFragment">
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_height="match_parent"
-        android:padding="30dp"
-        android:layout_weight="5"
-        tools:ignore="MissingConstraints"
-        >
+        android:layout_width="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/infotoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:elevation="1dp"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:id="@+id/linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
 
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:tabIndicator="@drawable/shape_tab_indicator"
+                    app:tabSelectedTextAppearance="@style/MyTabLayout"
+                    app:tabSelectedTextColor="@color/tabSelectedColor"
+                    app:tabIndicatorColor="@color/tabLineColor">
+                    <com.google.android.material.tabs.TabItem
+                        android:text="类型"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+                    <com.google.android.material.tabs.TabItem
+                        android:text="鉴赏"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                    <com.google.android.material.tabs.TabItem
+                        android:text="历史"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </com.google.android.material.tabs.TabLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/infoRelativelayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingHorizontal="10dp"
             android:paddingVertical="10dp"
-            >
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
             <!--        先放着  没什么控件可以做-->
             <!--        做两个卡片得了-->
         </androidx.recyclerview.widget.RecyclerView>
-    </com.google.android.material.card.MaterialCardView>
-
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

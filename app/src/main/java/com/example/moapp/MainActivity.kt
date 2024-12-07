@@ -1,6 +1,7 @@
 package com.example.moapp
 
 import android.os.Bundle
+import android.widget.Toolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -19,8 +20,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 隐藏 ActionBar  同时也保留底部导航栏
-        supportActionBar!!.hide()
+        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.maintoolbar)
+
+        // 替换Actionbar为Toolbarbar
+        setSupportActionBar(toolbar)
 
         val navView: BottomNavigationView = binding.navView
         navView.setItemIconTintList(null)  // 这个是干什么的？// 取消图标变颜色的功能

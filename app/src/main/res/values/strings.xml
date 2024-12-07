@@ -3,4 +3,8 @@
     <string name="title_home">绘卷</string>
     <string name="title_dashboard">名家</string>
     <string name="title_notifications">余书</string>
+    <string name="subtitle_type">类型</string>
+    <string name="subtitle_author">鉴赏</string>
+    <string name="subtitle_history">历史</string>
+    <string name="title_activity_info_item">InfoItemActivity</string>
 </resources>
