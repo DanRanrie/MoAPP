@@ -19,18 +19,38 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:fontFamily="@font/font"
+                android:textSize="30dp"
+                android:text="@string/homeForum"
+                android:id="@+id/homeForum"
                 android:layout_weight="1"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:fontFamily="@font/font"
+                android:textSize="30dp"
+                android:text="@string/homeAppreciation"
+                android:id="@+id/homeAppreciation"
                 android:layout_weight="1"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:fontFamily="@font/font"
+                android:textSize="30dp"
+                android:text="@string/homeWrite"
+                android:id="@+id/homeWrite"
                 android:layout_weight="1"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:fontFamily="@font/font"
+                android:textSize="30dp"
+                android:text="@string/homeRead"
+                android:id="@+id/homeRead"
                 android:layout_weight="1"/>
         </LinearLayout>
 
@@ -44,7 +64,9 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/homeRelativelayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/MaskLayer"
+                >
                 <!--        先放着  没什么控件可以做-->
                 <!--        做两个卡片得了-->
             </androidx.recyclerview.widget.RecyclerView>

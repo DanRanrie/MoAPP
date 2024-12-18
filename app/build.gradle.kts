@@ -7,6 +7,7 @@ plugins {
 android {
     namespace = "com.example.moapp"
     compileSdk = 34
+    aaptOptions.cruncherEnabled = false
 
     defaultConfig {
         applicationId = "com.example.moapp"
@@ -77,6 +78,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     kapt("androidx.room:room-compiler:2.6.1") // 添加Room注解依赖
     implementation("com.github.bumptech.glide:glide:4.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.6.1")
+    implementation("com.squareup.retrofit2:converter-gson:2.6.1")
+    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
+    implementation("de.hdodenhof:circleimageview:3.0.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

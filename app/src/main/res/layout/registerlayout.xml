@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--登录界面,用LinearLayout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="注册："
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--输入框-->
+    <EditText
+        android:id="@+id/edit_userphone"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/cellphone_selector"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_700"
+        android:layout_marginTop="60dp"
+        android:hint="手机号"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/register_selector"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_700"
+        android:hint="用户名"
+        android:textSize="20sp" />
+    <!--输入框-->
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="密码"
+        android:drawableLeft="@drawable/password_selector"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/purple_700"
+        android:textSize="20sp"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/edit_password_repeat"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="确认你的密码"
+        android:drawableLeft="@drawable/password_selector"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/purple_700"
+        android:textSize="20sp"
+        android:inputType="textPassword"/>
+    <!--按钮-->
+    <Button
+        android:id="@+id/registerbtn"
+        android:text="注册"
+        android:background="#919191"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="勾选同意"
+         />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userAgreement"
+            android:text="@string/userAgreementText" />
+    </LinearLayout>
+
+</LinearLayout>

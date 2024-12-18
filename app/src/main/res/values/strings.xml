@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MoApp</string>
+    <string name="app_name">墨</string>
     <string name="title_home">绘卷</string>
     <string name="title_dashboard">名家</string>
     <string name="title_notifications">余书</string>
@@ -7,4 +7,16 @@
     <string name="subtitle_author">鉴赏</string>
     <string name="subtitle_history">历史</string>
     <string name="title_activity_info_item">InfoItemActivity</string>
+    <string name="homeForum">论</string>
+    <string name="homeAppreciation">鉴</string>
+    <string name="homeWrite">书</string>
+    <string name="homeRead">阅</string>
+    <string name="username">请登录！</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="userAgreementText"><u>用户协议</u></string>
+    <string name="title_activity_user_agreement">UserAgreementActivity</string>
+    <string name="title_activity_forum">ForumActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

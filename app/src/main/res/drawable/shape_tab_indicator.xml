@@ -5,7 +5,7 @@
         android:height="5dp"
         android:gravity="center">
         <shape>
-            <corners android:radius="5dp" />
+            <corners android:radius="10dp" />
             <!--color无效，源码用tabIndicatorColor-->
 <!--            <solid android:color="@color/colorPrimary" />-->
         </shape>
